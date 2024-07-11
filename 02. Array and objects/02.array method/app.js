@@ -1,28 +1,28 @@
 let x;
 
-const arr = [ 12,34,56,78,90 ];
-
-arr.push(100) //to add a number to very end
-
-arr.pop()  // to take out the last element from the list
-
-arr.unshift(99) //to add element into the beginning
-
-arr.shift()//to exclude element into the beginning
-
-//arr.reverse()
-
-x=arr.includes(12) // true false output if the number is in the list
-
-x=arr.indexOf(12)
-
-//x=arr.slice(1, 4) // to seperate an element
+//Array literal
+const numbers = [12,33,45,99,10]
 
 
-//x=arr.splice(1, 4) //to remove an element
+//array constructor
 
-x=arr.splice(1, 4).reverse().toString().charAt(3);
+const fruits= new Array('apple', 'grape', 'orange');
 
+x = numbers[0]
 
+x= numbers[0] + numbers[4];
+
+x= `my favourite fruit is an ${fruits[2]}`
+
+x = numbers.length  //to find the lenght
+
+fruits[2]='pear' ;
+x= fruits
+
+fruits[3]= 'strawberry'
+fruits[fruits.length]= 'blueberry'
+fruits[fruits.length]= 'mango'
+
+x=fruits
 
 console.log(x)
