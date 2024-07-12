@@ -6,7 +6,10 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     font-size: large;
-    background-image: url("images.jfif")
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("abstract-geometric-wireframe-background_52683-59421.avif")
+    
 
    
 }
@@ -58,4 +61,11 @@ body {
 
 .addtask{
     color: blue;
+    font-size: medium;
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    border-radius: 50px;
+    
+   
 }
