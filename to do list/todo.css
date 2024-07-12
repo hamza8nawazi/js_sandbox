@@ -6,7 +6,6 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     font-size: large;
-    background-color: red ;
     background-image: url("images.jfif")
 
    
@@ -15,11 +14,48 @@ body {
     background: white;
     padding: 20px;
     border-radius: 8px;
-    width: 300px;
+    width: 500px;
     text-align: center;
+    height: 450px;
 
-
-    
 }
 
+.lists{
+    text-align: left;
+}
+.hello1{
+    border: 2px solid black;
+    padding: 3px;
+     
+}
+.hello2{
+    padding: 3px;
+    border: 2px solid black;
+}
+.hello3{
+    padding: 3px;
+    border: 2px solid black;
+}
+.hello4{
+    padding: 3px;
+    border: 2px solid black;
+}
+.hello5{
+    padding: 3px;
+    border: 2px solid black;
+}
+.search{
+    border: 5px solid rgb(54, 54, 41);
+    border-radius: 50px;
+}
 
+.search input{
+    width: 98%;
+    border-radius: 5%;
+    border: none;
+   
+}
+
+.addtask{
+    color: blue;
+}
