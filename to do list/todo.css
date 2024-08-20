@@ -17,44 +17,27 @@ body {
     background: white;
     padding: 20px;
     border-radius: 8px;
+
     width: 500px;
     text-align: center;
-    height: 450px;
+    height: 400px;
 
 }
 
 .lists{
     text-align: left;
 }
-.hello1{
-    border: 2px solid black;
-    padding: 3px;
-     
-}
-.hello2{
-    padding: 3px;
-    border: 2px solid black;
-}
-.hello3{
-    padding: 3px;
-    border: 2px solid black;
-}
-.hello4{
-    padding: 3px;
-    border: 2px solid black;
-}
-.hello5{
-    padding: 3px;
-    border: 2px solid black;
+li{
+    text-align: left;
 }
 .search{
-    border: 5px solid rgb(54, 54, 41);
+    border: 10px solid rgb(155, 155, 140);
     border-radius: 50px;
 }
 
 .search input{
     width: 98%;
-    border-radius: 5%;
+    border-radius: 7%;
     border: none;
    
 }
@@ -67,5 +50,10 @@ body {
     margin-top: 10px;
     border-radius: 50px;
     
+   
+}
+
+button{
+   margin-left: 10px;
    
 }

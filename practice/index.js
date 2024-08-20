@@ -1,10 +1,10 @@
-//plus any 3 nos
+//q1plus any 3 nos
 function num(x,y,z){
     return x+y+z
 }
 console.log(num(2,3,4))
 
-//table of any no.
+//q2table of any no.
 
 function table(num,limit){
     for (let i=1; i<=limit ;i++){
@@ -14,7 +14,7 @@ function table(num,limit){
 }
 table(2,10)
 
-//write a function which receives an array and print
+//q3write a function which receives an array and print
 
 function printArray(arr) {
     for (let i = 0; i < arr.length; i++) {
@@ -24,7 +24,7 @@ function printArray(arr) {
 let arr = [1, 2, 3, 4, 5];
 printArray(arr);
 
-//Write a function which calculates factorial of number
+//q4Write a function which calculates factorial of number
 
 function factorial(n) {
     if (n === 0 || n === 1) {
