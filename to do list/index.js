@@ -16,11 +16,7 @@ function inputtask(){
         deletebtn.innerHTML="Delete"
         newtodolist.appendChild(deletebtn)
         deletebtn.onclick=function(){
-         const index = list.indexOf(inputbox);
-         if (index > -1) {
-         list.splice(index, 1); // Remove the task from the list array
-}
-         listcontainer.removeChild(newtodolist); // Remove the task from the DOM
+         
 
 
         }
