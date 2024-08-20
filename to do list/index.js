@@ -1,30 +1,3 @@
-// const inputbox = document.getElementById("myInput")
-// const listcontainer = document.getElementById("lists")
-// function inputtask(){
-//     if(inputbox.value === ''){
-//         alert('you must write something')
-//     }
-//     else{
-//         newtodolist= document.createElement("newtodolist")
-//         newtodolist.innerHTML=inputbox.value 
-//         listcontainer.appendChild(newtodolist)
-//     }
-//     inputbox.value=''
-    
-// }
-
-// const list = [];
-// function inputtask() {
-//     task = document.getElementById('myInput').value;
-//     list.push(task);
-//     if (task == "") {
-//         alert("Please enter a task")
-//         return true;
-//     }
-    
-//     document.getElementById('lists').innerHTM +=`<li> ${task} <button type='button' onclick='removeItem()'>delete</button>    </li>`
-// }
-
 
 const list=[]
 function inputtask(){
