@@ -1,62 +1,83 @@
-// const inputbox = document.getElementById("myInput")
-// const listcontainer = document.getElementById("lists")
+// todolist
+// const list=[]
+// let id=0
 // function inputtask(){
-//     if(inputbox.value === ''){
-//         alert('you must write something')
-//     }
-//     else{
-//         newtodolist= document.createElement("newtodolist")
-//         newtodolist.innerHTML=inputbox.value 
+//      id++ 
+//      inputbox = document.getElementById("myInput").value
+//      listcontainer = document.getElementById("lists")
+//      if(inputbox===""){
+//         alert('You must write something')
+//      }else{
+//          task = {
+//          id: id,
+//          text: inputbox
+//      };
+//         list.push(task)
+//         document.getElementById('myInput').value = '';
+//         newtodolist= document.createElement("li")
+//         newtodolist.innerHTML=inputbox
+//         newtodolist.id= id
 //         listcontainer.appendChild(newtodolist)
-//     }
-//     inputbox.value=''
-    
-// }
 
-// const list = [];
-// function inputtask() {
-//     task = document.getElementById('myInput').value;
-//     list.push(task);
-//     if (task == "") {
-//         alert("Please enter a task")
-//         return true;
-//     }
-    
-//     document.getElementById('lists').innerHTM +=`<li> ${task} <button type='button' onclick='removeItem()'>delete</button>    </li>`
-// }
-
-
-const list=[]
-function inputtask(){
-     inputbox = document.getElementById("myInput").value
-     listcontainer = document.getElementById("lists")
-     if(inputbox===""){
-        alert('You must write something')
-     }else{
-        list.push(inputbox)
-        document.getElementById('myInput').value = '';
-        newtodolist= document.createElement("li")
-        newtodolist.innerHTML=inputbox
-        listcontainer.appendChild(newtodolist)
-
-        deletebtn=document.createElement('button')
-        deletebtn.innerHTML="Delete"
-        newtodolist.appendChild(deletebtn)
-        deletebtn.onclick=function(){
-         const index = list.indexOf(inputbox);
-         if (index > -1) {
-         list.splice(index, 1); // Remove the task from the list array
-}
-         listcontainer.removeChild(newtodolist); // Remove the task from the DOM
-
-
-        }
+//         deletebtn=document.createElement('button')
+//         deletebtn.innerHTML="Delete"
+//         newtodolist.appendChild(deletebtn)
         
-    }
+//         deletebtn.onclick= function(){
+//          list = list.filter(task => task.id !== id);
+//          listcontainer.removeChild(newtodolist)
+//         }
+        
+//     }
     
-}
+// }
 
-
+//make an id
+//id+1
+//add with the help of an id
+//for deleting , find id, iterate.
+//update 
 
     
+let list = [];
+        let id = 0; 
+
+        function inputtask() {
+            id++; 
+            const inputbox = document.getElementById("myInput").value;
+            const listcontainer = document.getElementById("lists");
+
+            if (inputbox === "") {
+                alert('You must write something');
+            } else {
+               
+
+                list.push(inputbox);
+
+                
+                const newtodolist = document.createElement("li");
+               
+                newtodolist.innerHTML = inputbox; 
+
+                
+                const deletebtn = document.createElement('button');
+                deletebtn.innerHTML = "Delete";
+                newtodolist.appendChild(deletebtn);
+
+               
+                listcontainer.appendChild(newtodolist);
+
+                
+                document.getElementById('myInput').value = '';
+
+                
+                deletebtn.onclick = function() {
+                    
+                    list = list.filter((item) => item.id !== id);
+                    
+                    
+                    listcontainer.removeChild(newtodolist);    
+               };
+            }
+        }
 
