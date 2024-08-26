@@ -50,7 +50,6 @@ function inputtask() {
     const newItem = { id: id, name: inputbox };
     list.push(newItem);
     listcontainer.innerHTML = "";
-    console.log(listcontainer);
     list.map((item) => {
     listcontainer.innerHTML += `<li class="item-list">${item.name}
                   <div>
