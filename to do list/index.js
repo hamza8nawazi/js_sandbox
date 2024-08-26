@@ -90,14 +90,7 @@ function updatebtn(){
   const edited = list.find(item => item.id === editid);
   console.log(edited.name)
   edited.name=inputbox
-  listcontainer.innerHTML = "";
-    list.map((item) => {
-    listcontainer.innerHTML += `<li class="item-list">${item.name}
-                  <div>
-                  <button onclick="DeleteTask(${item.id})">Delete</button>
-                  <button onclick="Edit(${item.id})">Edit</button></div>`;
-    });
-    document.getElementById('myInput').value = '';
+  filterdata();
 
 }
 
