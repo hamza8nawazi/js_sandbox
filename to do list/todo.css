@@ -57,3 +57,12 @@ button{
    margin-left: 10px;
    
 }
+
+.updatebutton{
+    color: blue;
+    font-size: medium;
+    display:flex;
+    margin-top: 10px;
+    border-radius: 50px;
+   
+}
