@@ -55,8 +55,23 @@ li {
     outline: none; 
 }
 
-.addtask, .updatebutton {
-    display: inline-flex;
+.addtask{
+ 
+        
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 30px;
+        color: white;
+        background-color: #007bff;
+        border: none;
+        cursor: pointer;
+        font-size: medium;
+        transition: background-color 0.3s ease;
+
+}
+
+.updatebutton {
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
@@ -87,4 +102,8 @@ button {
 
 button:hover {
     background-color: #5a6268; /* Darker gray on hover */
+}
+
+.removeaddtaskbtn{
+    display: none;
 }

@@ -4,6 +4,7 @@ const listcontainer = document.getElementById("lists");
 let list = [];
 let id = 0;
 let editid = null;
+
 function inputtask() {
   if (inputbox.value === "") {
     alert("You must write something");
@@ -36,11 +37,15 @@ function filterdata() {
                   `;
   });
 }
+
 function Edit(taskId) {
   let itemToEdit = list.find(item => item.id === taskId);
   editid=taskId;
   inputbox.value = itemToEdit.name;
+  document.getElementById("Add").classList.add("removeaddtaskbtn")
 }
+
+
 function updatebtn(){
   if (inputbox.value === "") {
     alert("You must write something");
@@ -50,6 +55,7 @@ function updatebtn(){
   edited.name=inputbox.value;
   filterdata();
   inputbox.value = "";
+  
  
 
 }
