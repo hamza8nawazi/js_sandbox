@@ -1,6 +1,9 @@
 
 const inputbox = document.getElementById("myInput");
 const listcontainer = document.getElementById("lists");
+const add = document.getElementById("add-task");
+const update = document.getElementById("update")
+
 let list = [];
 let id = 0;
 let editid = null;
@@ -13,7 +16,6 @@ function inputtask() {
   id = id + 1;
   const newItem = { id: id, name: inputbox.value };
   list.push(newItem);
-  console.log(">>>", list);
   listcontainer.innerHTML = "";
   list.map((item) => {
     listcontainer.innerHTML += `<li class="item-list">${item.name}
@@ -42,7 +44,12 @@ function Edit(taskId) {
   let itemToEdit = list.find(item => item.id === taskId);
   editid=taskId;
   inputbox.value = itemToEdit.name;
-  document.getElementById("Add").classList.add("removeaddtaskbtn")
+  add.classList.add("removeaddtaskbtn")
+  update.classList.add("addupdatebtn")
+  update.style.display = "inline-block";  
+  add.style.display = "none"; 
+     
+
 }
 
 
@@ -53,16 +60,10 @@ function updatebtn(){
   }
   let edited = list.find(item => item.id === editid);
   edited.name=inputbox.value;
+  update.classList.add("updatenow")
+  add.classList.add("addtaskbtn")
   filterdata();
   inputbox.value = "";
-  
- 
-
+  update.style.display = "none"; 
+  add.style.display = "inline-block"; 
 }
-
-
-
-
-
-
-
