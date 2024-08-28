@@ -3,7 +3,6 @@ const inputbox = document.getElementById("myInput");
 const listcontainer = document.getElementById("lists");
 const add = document.getElementById("add-task");
 const update = document.getElementById("update")
-
 let list = [];
 let id = 0;
 let editid = null;
@@ -66,4 +65,8 @@ function updatebtn(){
   inputbox.value = "";
   update.style.display = "none"; 
   add.style.display = "inline-block"; 
+}
+
+function cancelEdit() {
+  inputbox.value = "";
 }

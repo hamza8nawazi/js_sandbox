@@ -111,3 +111,18 @@ button:hover {
 .addtaskbtn{
     display: inline-flex;
 }
+
+.cancelbtn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+    transition: background-color 0.3s ease;
+
+}
